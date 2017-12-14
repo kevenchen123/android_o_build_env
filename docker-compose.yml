@@ -1,0 +1,8 @@
+build_env:
+  build: .
+  volumes:
+    - ./code:/home/android/code
+    - ./ssh:/home/android/.ssh
+  working_dir: /home/android
+  env_file:
+    - ./build.env
