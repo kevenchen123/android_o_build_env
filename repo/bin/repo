@@ -6,7 +6,7 @@ import os
 REPO_URL = os.environ.get('REPO_URL', None)
 if not REPO_URL:
   REPO_URL = '/home/android/repo'
-REPO_REV = 'default'
+REPO_REV = 'master'
 
 # Copyright (C) 2008 Google Inc.
 #

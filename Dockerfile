@@ -16,7 +16,7 @@ USER root
 RUN apt-get update
 RUN apt-get install openjdk-8-jdk -y
 
-RUN apt-get install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip python-networkx -y
+RUN apt-get install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip python-networkx libssl-dev bc liblz4-tool rsync -y
 
 # ====== change user ======
 
@@ -42,6 +42,7 @@ RUN echo -e  'y\n' | ssh-keygen -q -t rsa -N "" -f ~/tmp/id_rsa
 RUN echo "PATH=~/bin:$PATH" >> ~/.bashrc
 COPY ./repo $HOME
 USER root
+RUN tar -xvf $HOME/repo.tar
 RUN chmod 777 -R $HOME/bin && chmod 777 -R $HOME/repo
 
 # ====== init config ======

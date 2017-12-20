@@ -4,7 +4,6 @@
 You can set your git config (such as name, email) in file build.env.
 You may also need to set ip of host server where you download code.
 
-
 ## 2. build from scratch
 ```shell
 sudo docker-compose up --build
@@ -18,12 +17,10 @@ chmod 600 ~/.ssh/*
 ```
 to change permission when you use the docker image.
 
-
 ## 4. download code
 Download your code in path /home/android/code which is a share folder from outside.
 If you download AOSP source code, it will cause docker load too many files when docker start up.
 Move content of "code" folder to other place before run docker image, and move it back after image start up.
-
 
 ## 5. run docker
 ```shell
