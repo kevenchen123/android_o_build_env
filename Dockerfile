@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:17.10
 
 MAINTAINER kevenchen123@gmail.com
 
