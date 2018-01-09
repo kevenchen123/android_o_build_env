@@ -19,8 +19,6 @@ to change permission when you use the docker image.
 
 ## 4. download code
 Download your code in path /home/android/code which is a share folder from outside.
-If you download AOSP source code, it will cause docker load too many files when docker start up.
-Move content of "code" folder to other place before run docker image, and move it back after image start up.
 
 ## 5. run docker
 ```shell
