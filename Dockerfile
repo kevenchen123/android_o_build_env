@@ -16,7 +16,7 @@ USER root
 RUN apt-get update
 RUN apt-get install openjdk-8-jdk -y
 
-RUN apt-get install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip python-networkx libssl-dev bc liblz4-tool rsync ruby vim -y
+RUN apt-get install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip python-networkx libssl-dev bc liblz4-tool rsync ruby subversion vim -y
 
 # ====== change user ======
 
