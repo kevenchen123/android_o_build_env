@@ -10,7 +10,7 @@ You may also need to set IP of host server when you need download android code i
 ```shell
 sudo docker-compose up --build
 ```
-Also you can use another docker file "Dockerfile2" which will use my already built image on docker hub to replace exit "Dockerfile".
+Also you can use another docker file "Dockerfile2" which will use my already built image on docker hub to replace "Dockerfile".
 
 
 ## 3. ssh settings
