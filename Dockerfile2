@@ -1,0 +1,13 @@
+FROM kevenchen/android-build-env-for-o
+
+USER root
+
+# ====== change user ======
+
+ENV MYNAME android
+ENV MYPASS 123
+ENV HOME /home/$MYNAME
+
+# ====== init config ======
+
+CMD $HOME/bin/init.sh && su android  && /bin/bash

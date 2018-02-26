@@ -1,13 +1,17 @@
 # Android build environment for O
 
-## 1. config
-You can set your git config (such as name, email) in file build.env.
-You may also need to set ip of host server where you download code.
+version 1.0
 
-## 2. build from scratch
+## 1. config
+You can set your git config (such as name, email) and http proxy in file "build.env", more detail see comment in file "build.env".
+You may also need to set IP of host server when you need download android code in your company.
+
+## 2. build
 ```shell
 sudo docker-compose up --build
 ```
+Also you can use another docker file "Dockerfile2" which will use my already built image on docker hub to replace exit "Dockerfile".
+
 
 ## 3. ssh settings
 After docker build, there are ssh key files in folder ssh. You can also replace them with your keys.
